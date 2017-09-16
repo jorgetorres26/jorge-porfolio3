@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>The Food Project</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+ 
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        
+        main {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+        
+        .widget-wrapper {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 2rem;
+        }
+        
+        .extra-margins {
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .divider-new {
+            margin-top: 0;
+        }
+        #freebut{
+            padding-right: 305px;
+        }
+
+        #centertx{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <strong>The Food Project</strong>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Providers</a>
+                        </li>
+                        
+
+                        
+                        <li class="nav-item dropdown btn-group">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+                            <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+                                <a class="dropdown-item">My Places</a>
+                                <a class="dropdown-item">History</a>
+                                <a class="dropdown-item">My Profile</a>
+                            </div>
+                        </li> 
+                    </ul>
+                    
+                    <form class="form-inline waves-effect waves-light">
+                        
+                            <a class="nav-link">Sign Up</a>
+                            <a class="nav-link">Log In</a>
+                        <!--
+                        <input class="form-control" type="text" placeholder="Search">
+                        -->
+
+
+                    </form>
+                
+
+
+                </div>
+            </div>
+        </nav>
+	    <!--/.Navbar-->
+
+    </header>
+
+    <main>
+
+        <!--Main layout-->
+        <div class="container">
+            <div class="row">
+
+                <!--Sidebar-->
+                <div class="col-lg-4">
+
+                    <div class="widget-wrapper">
+                        <h4>Categories:</h4>
+                        <br>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">Restaurants</a>
+                            <a href="#" class="list-group-item">Food Pantries</a>
+                            <a href="#" class="list-group-item">Supermarkets</a>
+                            <a href="#" class="list-group-item">Community Centers</a>
+                            <a href="#" class="list-group-item">Other</a>
+                        </div>
+                    </div>
+
+
+                    <div class="widget-wrapper">
+                        <h4>Blog</h4>
+                        <br>
+                         <!--Card-->
+                            <div class="card">
+
+                                <!--Card image-->
+                                <div class="view overlay hm-white-slight">
+                                    <img src="http://www.williamcollierdesign.com/wp-content/uploads/2016/02/UW-pride_students-Red-Sq.jpg" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+
+                                <!--Card content-->
+                                <div class="card-block">
+                                    <!--Title-->
+                                    <h4 class="card-title"> UW Students join the Project!</h4>
+                                    <!--Text-->
+                                    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                </div>
+                                <!--/.Card content-->
+
+                            </div>
+                            <!--/.Card-->
+
+                            
+                    </div>
+
+                    
+                    <!--
+                    <div class="widget-wrapper">
+                        <h4>Join Us! </h4>
+                        <br>
+                        <div class="card">
+                            <div class="card-block">
+                                <p><strong>Sign Up!</strong></p>
+                                <p> Join the Food Project and save places, share with friends and more!</p>
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="form1" class="form-control">
+                                    <label for="form1"> Username </label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="text" id="form2" class="form-control">
+                                    <label for="form2">Email</label>
+                                </div>
+                                <button class="btn btn-primary">Submit</button>
+                                <button class="btn btn-primary">Log In</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    -->
+                </div>
+                <!--/.Sidebar-->
+
+                <!--Main column-->
+                <div class="col-lg-8">
+
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="divider-new">
+                                <h2 class="h2-responsive">Food near me</h2>
+                            </div>
+                            <div class="widget-wrapper">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">List</a>
+                            <a href="#" class="list-group-item">Map</a>
+                        </div>
+
+                        
+                        <br>
+
+                        <!--
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary" id="freebut">
+                                <input id="centertx" type="checkbox" autocomplete="off"> List
+                            </label>
+    
+                            <label class="btn btn-primary" id="freebut">
+                                <input id="centertx" type="checkbox" autocomplete="off"> Map
+                            </label>
+                        </div>
+                    </div>
+                    -->
+                    <!--/.First row-->
+                  
+
+                    <!--Second row-->
+                    <div class="row">
+                        <!--First columnn-->
+                        <div class="col-lg-4">
+                            <!--Card-->
+                            <div class="card">
+
+                                <!--Card image-->
+                                <div class="view overlay hm-white-slight">
+                                    <img src="http://faculty.washington.edu/devasia/images/UW_Photos/hub.JPG" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+
+                                <!--Card content-->
+                                <div class="card-block">
+                                    <!--Title-->
+                                    <h4 class="card-title">UW Food Pantry</h4>
+                                    <!--Text-->
+                                    <p class="card-text"> Assorted canned food and snacks </p>
+                                    <p class="card-text"> FREE </p>
+                                    <a href="#" class="btn btn-primary"> More info</a>
+                                    <p class="card-text">
+                                         <p><small class="text-muted">0.2 miles from you</small></p>
+                                    </p>
+                                </div>
+                                <!--/.Card content-->
+
+                            </div>
+                            <!--/.Card-->
+                            <br>
+                            <!--Card-->
+                            <div class="card">
+
+                                <!--Card image-->
+                                <div class="view overlay hm-white-slight">
+                                    <img src="https://foodlifeline.org/sites/default/files/styles/blog-thumbnail-318-150/public/blog/image/university-district-food-bank-rendering-1.jpg?itok=Dce-vKHz" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+
+                                <!--Card content-->
+                                <div class="card-block">
+                                    <!--Title-->
+                                    <h4 class="card-title">University District Food Bank</h4>
+                                    <!--Text-->
+                                    <p class="card-text"> Assorted Snacks and Meals </p>
+                                    <p class="card-text">  FREE</p>
+
+                                    <a href="#" class="btn btn-primary"> More info</a>
+                                     <p class="card-text">
+                                         <p><small class="text-muted">1.5 miles from you</small></p>
+                                    </p>
+                                </div>
+                                <!--/.Card content-->
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!--First columnn-->
+
+                        <!--Second columnn-->
+                        <div class="col-lg-4">
+                            <!--Card-->
+                            <div class="card">
+
+                                <!--Card image-->
+                                <div class="view overlay hm-white-slight">
+                                    <img src="http://www.roadarch.com/14/6/nvsafe3.jpg" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+
+                                <!--Card content-->
+                                <div class="card-block">
+                                    <!--Title-->
+                                    <h4 class="card-title"> Safeway</h4>
+                                    <!--Text-->
+                                    <p class="card-text"> Assorted Produce</p>
+                                    <p class="card-text">  $0.25 - $2.50 / lb </p>
+                                    <a href="#" class="btn btn-primary"> more info</a>
+                                    <p class="card-text">
+                                         <p><small class="text-muted">1.2 miles from you</small></p>
+                                    </p>
+                                </div>
+                                <!--/.Card content-->
+
+                            </div>
+                            <!--/.Card-->
+
+                             <br>
+
+                             <!--Card-->
+                            <div class="card">
+
+                                <!--Card image-->
+                                <div class="view overlay hm-white-slight">
+                                    <img src="http://www.cityofchesapeake.net/Assets/images/departments/parks_rec/community_centers/community_camelot.jpg" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-block">
+                                    <!--Title-->
+                                    <h4 class="card-title"> Montlake Community Center</h4>
+                                    <!--Text-->
+                                    <p class="card-text">  Meatloaf and Mashed Potatoes </p>
+                                    <p class="card-text"> FREE </p>
+                                    <a href="#" class="btn btn-primary"> more info</a>
+                                    <p class="card-text">
+                                         <p><small class="text-muted">2.1 miles from you</small></p>
+                                    </p>
+                                </div>
+                                <!--/.Card content-->
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!--Second columnn-->
+
+                        <!--Third columnn-->
+                        <div class="col-lg-4">
+                            <!--Card-->
+                            <div class="card">
+
+                                <!--Card image-->
+                                <div class="view overlay hm-white-slight">
+                                    <img src="http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+
+                                <!--Card content-->
+                                <div class="card-block">
+                                    <!--Title-->
+                                    <h4 class="card-title"> Yummy Teriyaki </h4>
+                                    <!--Text-->
+                                    <p class="card-text"> Fried Rice  </p>
+                                     <p class="card-text">  $2  </p>
+                                    <a href="#" class="btn btn-primary"> more info</a>
+                                    <p class="card-text">
+                                         <p><small class="text-muted">1.3 miles from you</small></p>
+                                    </p>
+                                </div>
+                                <!--/.Card content-->
+
+                            </div>
+                            <!--/.Card-->
+                            <br>
+                            <!--Card-->
+                            <div class="card">
+
+                                <!--Card image-->
+                                <div class="view overlay hm-white-slight">
+                                    <img src="https://23fb88ad5ca22a1b4d32-e1951aed44f4258f5fd1721b94cf0277.ssl.cf5.rackcdn.com/WA007-ipad.jpg" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+
+                                <!--Card content-->
+                                <div class="card-block">
+                                    <!--Title-->
+                                    <h4 class="card-title"> Bellevue College Food Pantry </h4>
+                                    <!--Text-->
+                                    <p class="card-text"> Assorted canned food and produce  </p>
+                                    <p class="card-text"> FREE </p>
+
+                                    <a href="#" class="btn btn-primary"> more info</a>
+                                    <p class="card-text">
+                                         <p><small class="text-muted">3.5 miles from you</small></p>
+                                    </p>
+                                </div>
+                                <!--/.Card content-->
+
+                            </div>
+                            <!--/.Card-->
+
+                        </div>
+                        <!--Third columnn-->
+                    </div>
+                    <!--/.Second row-->
+
+                </div>
+                <!--/.Main column-->
+
+            </div>
+        </div>
+        <!--/.Main layout-->
+
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only primary-color-dark">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-3 offset-lg-1 hidden-lg-down">
+                    <h5 class="title"> 
+                        The Food Project
+                    </h5>
+                    <p> We are a group of college students from the UW </p>
+
+                </div>
+                <!--/.First column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Second column-->
+                <div class="col-lg-2 col-md-4 offset-lg-1">
+                    <h5 class="title">First column</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                        <li><a href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Third column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">Second column</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                        <li><a href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">Third column</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                        <li><a href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 The Food Project </a>
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+</body>
+
+</html>
