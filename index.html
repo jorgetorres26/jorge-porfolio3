@@ -7,508 +7,393 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>The Food Project</title>
+    <title>Material Design Bootstrap</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
- 
+
     <!-- Template styles -->
     <style rel="stylesheet">
         /* TEMPLATE STYLES */
         
         main {
-            padding-top: 3rem;
-            padding-bottom: 2rem;
+            margin-top: 3rem;
         }
         
-        .widget-wrapper {
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #e0e0e0;
+        .lead {
+            text-align: justify;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .post-title {
+                margin-top: 1rem;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .read-more {
+                text-align: center;
+            }
+        }
+        
+        .extra-margin {
+            margin-top: 2rem;
             margin-bottom: 2rem;
         }
         
-        .extra-margins {
-            margin-top: 1rem;
-            margin-bottom: 2.5rem;
-        }
-        
-        .divider-new {
-            margin-top: 0;
-        }
-        #freebut{
-            padding-right: 305px;
+        .navbar {
+            background-color: #497FEA;
         }
 
-        #centertx{
-            text-align: center;
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+        
+        footer.page-footer {
+            background-color: #555658;
+            margin-top: 2rem;
         }
     </style>
+
 </head>
 
 <body>
 
-
     <header>
-
         <!--Navbar-->
-        <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
-            <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <strong>Jorge Torres</strong>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNav1">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Providers</a>
-                        </li>
-                        
-
-                        
-                        <li class="nav-item dropdown btn-group">
-                            <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
-                            <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
-                                <a class="dropdown-item">My Places</a>
-                                <a class="dropdown-item">History</a>
-                                <a class="dropdown-item">My Profile</a>
-                            </div>
-                        </li> 
-                    </ul>
-                    
-                    <form class="form-inline waves-effect waves-light">
-                        
-                            <a class="nav-link">Sign Up</a>
-                            <a class="nav-link">Log In</a>
-                        <!--
-                        <input class="form-control" type="text" placeholder="Search">
-                        -->
-
-
-                    </form>
-                
-
-
-                </div>
+       <nav class="navbar navbar-expand-lg navbar-dark navbar-dark">
+            <a class="navbar-brand" href="#">Jorge Torres</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> About Me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact  </a>
+                    </li>
+                </ul>
             </div>
         </nav>
-	    <!--/.Navbar-->
 
+        <!--/.Navbar-->
     </header>
 
     <main>
-
         <!--Main layout-->
         <div class="container">
-            <div class="row">
 
-                <!--Sidebar-->
-                <div class="col-lg-4">
-
-                    <div class="widget-wrapper">
-                        <h4>Categories:</h4>
-                        <br>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">Restaurants</a>
-                            <a href="#" class="list-group-item">Food Pantries</a>
-                            <a href="#" class="list-group-item">Supermarkets</a>
-                            <a href="#" class="list-group-item">Community Centers</a>
-                            <a href="#" class="list-group-item">Other</a>
-                        </div>
-                    </div>
-
-
-                    <div class="widget-wrapper">
-                        <h4>Blog</h4>
-                        <br>
-                         <!--Card-->
-                            <div class="card">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="http://www.williamcollierdesign.com/wp-content/uploads/2016/02/UW-pride_students-Red-Sq.jpg" class="img-fluid" alt="">
-                                    <a href="#">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title"> UW Students join the Project!</h4>
-                                    <!--Text-->
-                                    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-
-                            
-                    </div>
-
-                    
-                    <!--
-                    <div class="widget-wrapper">
-                        <h4>Join Us! </h4>
-                        <br>
-                        <div class="card">
-                            <div class="card-block">
-                                <p><strong>Sign Up!</strong></p>
-                                <p> Join the Food Project and save places, share with friends and more!</p>
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix"></i>
-                                    <input type="text" id="form1" class="form-control">
-                                    <label for="form1"> Username </label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-envelope prefix"></i>
-                                    <input type="text" id="form2" class="form-control">
-                                    <label for="form2">Email</label>
-                                </div>
-                                <button class="btn btn-primary">Submit</button>
-                                <button class="btn btn-primary">Log In</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    -->
+            <!--Page heading-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <h1 class="h1-responsive">About Me </h1>
                 </div>
-                <!--/.Sidebar-->
-
-                <!--Main column-->
-                <div class="col-lg-8">
-
-                    <!--First row-->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="divider-new">
-                                <h2 class="h2-responsive">Food near me</h2>
-                            </div>
-                            <div class="widget-wrapper">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">List</a>
-                            <a href="#" class="list-group-item">Map</a>
-                        </div>
-
-                        
-                        <br>
-
-                        <!--
-                        <div class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-primary" id="freebut">
-                                <input id="centertx" type="checkbox" autocomplete="off"> List
-                            </label>
-    
-                            <label class="btn btn-primary" id="freebut">
-                                <input id="centertx" type="checkbox" autocomplete="off"> Map
-                            </label>
-                        </div>
-                    </div>
-                    -->
-                    <!--/.First row-->
-                  
-
-                    <!--Second row-->
-                    <div class="row">
-                        <!--First columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="http://faculty.washington.edu/devasia/images/UW_Photos/hub.JPG" class="img-fluid" alt="">
-                                    <a href="#">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title">UW Food Pantry</h4>
-                                    <!--Text-->
-                                    <p class="card-text"> Assorted canned food and snacks </p>
-                                    <p class="card-text"> FREE </p>
-                                    <a href="#" class="btn btn-primary"> More info</a>
-                                    <p class="card-text">
-                                         <p><small class="text-muted">0.2 miles from you</small></p>
-                                    </p>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-                            <br>
-                            <!--Card-->
-                            <div class="card">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="https://foodlifeline.org/sites/default/files/styles/blog-thumbnail-318-150/public/blog/image/university-district-food-bank-rendering-1.jpg?itok=Dce-vKHz" class="img-fluid" alt="">
-                                    <a href="#">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title">University District Food Bank</h4>
-                                    <!--Text-->
-                                    <p class="card-text"> Assorted Snacks and Meals </p>
-                                    <p class="card-text">  FREE</p>
-
-                                    <a href="#" class="btn btn-primary"> More info</a>
-                                     <p class="card-text">
-                                         <p><small class="text-muted">1.5 miles from you</small></p>
-                                    </p>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--First columnn-->
-
-                        <!--Second columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="http://www.roadarch.com/14/6/nvsafe3.jpg" class="img-fluid" alt="">
-                                    <a href="#">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title"> Safeway</h4>
-                                    <!--Text-->
-                                    <p class="card-text"> Assorted Produce</p>
-                                    <p class="card-text">  $0.25 - $2.50 / lb </p>
-                                    <a href="#" class="btn btn-primary"> more info</a>
-                                    <p class="card-text">
-                                         <p><small class="text-muted">1.2 miles from you</small></p>
-                                    </p>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-
-                             <br>
-
-                             <!--Card-->
-                            <div class="card">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="http://www.cityofchesapeake.net/Assets/images/departments/parks_rec/community_centers/community_camelot.jpg" class="img-fluid" alt="">
-                                    <a href="#">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title"> Montlake Community Center</h4>
-                                    <!--Text-->
-                                    <p class="card-text">  Meatloaf and Mashed Potatoes </p>
-                                    <p class="card-text"> FREE </p>
-                                    <a href="#" class="btn btn-primary"> more info</a>
-                                    <p class="card-text">
-                                         <p><small class="text-muted">2.1 miles from you</small></p>
-                                    </p>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--Second columnn-->
-
-                        <!--Third columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg" class="img-fluid" alt="">
-                                    <a href="#">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title"> Yummy Teriyaki </h4>
-                                    <!--Text-->
-                                    <p class="card-text"> Fried Rice  </p>
-                                     <p class="card-text">  $2  </p>
-                                    <a href="#" class="btn btn-primary"> more info</a>
-                                    <p class="card-text">
-                                         <p><small class="text-muted">1.3 miles from you</small></p>
-                                    </p>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-                            <br>
-                            <!--Card-->
-                            <div class="card">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="https://23fb88ad5ca22a1b4d32-e1951aed44f4258f5fd1721b94cf0277.ssl.cf5.rackcdn.com/WA007-ipad.jpg" class="img-fluid" alt="">
-                                    <a href="#">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title"> Bellevue College Food Pantry </h4>
-                                    <!--Text-->
-                                    <p class="card-text"> Assorted canned food and produce  </p>
-                                    <p class="card-text"> FREE </p>
-
-                                    <a href="#" class="btn btn-primary"> more info</a>
-                                    <p class="card-text">
-                                         <p><small class="text-muted">3.5 miles from you</small></p>
-                                    </p>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-
-                        </div>
-                        <!--Third columnn-->
-                    </div>
-                    <!--/.Second row-->
-
-                </div>
-                <!--/.Main column-->
-
             </div>
+            <!--/.Page heading-->
+            <hr>
+
+            <!--First row-->
+            <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
+                <!--Featured image-->
+                <div class="col-lg-7">
+                    <div class="view overlay hm-white-light z-depth-1-half">
+                        <img src="headshot.jpg" class="img-fluid" alt="Jorge Torres">
+                        <img src="headshot3.png" class="img-fluid" alt="Jorge Torres">
+                        <div class="mask"></div>
+                    </div>
+                </div>
+                <br>
+                <!--/.Featured image-->
+
+                <!--Post excerpt-->
+                <div class="col-lg-5">
+                    <p>I am currently a Junior at the University of Washington's Information School, specializing in Human Computer Interaction. The Informatics program at the Information School offers me a plethora of skills such as: programming, designing, project management, networking, database management, and web development; similar to a Computer Science program but with a Human-Centered approach. Through my coursework I have experience with both the programming, designing, and research aspects in developing websites and mobile applications. I have developed programs in Java, C#, while also creating websites with HTML, CSS and JavaScript. I also have experience with Relational Database Systems through Microsoft’s SQL Studio. Apart from my technical experience through coursework, I also have experience with working with teams and leadership. In my previous college, I worked as the Program Coordinator for El Centro Latino, a Student Program in Bellevue College (Bellevue, WA) which gave me the opportunity to direct this student program offering services to the college’s Latino students. There I managed the program’s finances, as well as managing projects such as: fundraisers, cultural events and educational trips while helping students in developing their academic and professional skills.   
+                    </p>
+                    <p class="my-4">
+                        I have always developed a passion for tech; but also for music, 
+                        sports and video games. Whether it is with my bass guitar or with my ukelele, in my free time I try to 
+                        relax by playing some music and learning new songs. Coming from the island of Puerto Rico, baseball was 
+                        my favorite sport growing up; but then I found a love for basketball, tennis, soccer and most recently, 
+                        Football and Hockey. My favorite teams are the Seahawks, the Mariners, the Sounders and the Washington Huskies. 
+                        As my passion for enjoying sports grew, my gaming interests shifted from Call of Duty, Halo and Assassins Creed to sports 
+                        games like NBA 2K, EA Sports FIFA and Madden. I am currently trying to travel more around the world, as 
+                        I haven't really been anywhere except from the US and Canada (and of course my casa, Puerto Rico). My goal
+                        for is to hopefully travel to Mexico this year.
+                    </p>
+                </div>
+                <!--/.Post excerpt-->
+            </div>
+            <!--/.First row-->
+            
+            <br>
+            <br>
+            <br>
+
+            <!--Page heading-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <h1 class="h1-responsive">Experience </h1>
+                </div>
+            </div>
+            <!--/.Page heading-->
+            <hr>
+
+            <!--Second row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <!--Featured image-->
+                <div class="col-lg-5">
+                    <div class="view overlay hm-white-light z-depth-1-half">
+                        <img src="https://clientportal.thecliftongroup.com/images/parametric-logo-200.png" class="img-fluid" alt="">
+                        <div class="mask"></div>
+                    </div>
+                </div>
+                <!--Featured image-->
+
+               <!--Post excerpt-->
+                <div class="col-lg-7">
+                    <a href="#!"><h2 class="post-title font-bold">Development Services Internship</h2></a>
+                    <small class="text-muted">Parametric Portfolio Associates, Seattle, WA</small>
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <!--/.Post excerpt-->
+            </div>
+            <!--/.Second row-->
+            <hr class="extra-margin my-5">
+
+            <!--Third row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <!--Featured image-->
+                <div class="col-lg-5">
+                    <div class="view overlay hm-white-light z-depth-1-half">
+                        <img src="http://depts.washington.edu/learnit/images/logo.png" class="img-fluid" alt="">
+                        <div class="mask"></div>
+                    </div>
+                </div>
+                <!--Featured image-->
+
+               <!--Post excerpt-->
+                <div class="col-lg-7">
+                    <a href="#!"><h2 class="post-title font-bold">IT Accessibility Assistant</h2></a>
+                    <small class="text-muted">University of Washington Information Technology, Seattle, WA</small>                    
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <!--/.Post excerpt-->
+            </div>
+            <!--/.Third row-->
+            <hr class="extra-margin my-5">
+
+            <!--Third row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <!--Featured image-->
+                <div class="col-lg-5">
+                    <div class="view overlay hm-white-light z-depth-1-half">
+                        <img src="https://stocknews.com/wp-content/uploads/2017/03/staples-spls-logo.png" class="img-fluid" alt="">
+                        <div class="mask"></div>
+                    </div>
+                </div>
+                <!--Featured image-->
+
+               <!--Post excerpt-->
+                <div class="col-lg-7">
+                    <a href="#!"><h2 class="post-title font-bold">Technology Sales Associate</h2></a>
+                    <small class="text-muted"> Staples, Inc. , Redmond, WA</small>                    
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <!--/.Post excerpt-->
+            </div>
+
+            <hr class="extra-margin my-5">
+
+            <!--Fifth row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <!--Featured image-->
+                <div class="col-lg-7">
+                    <div class="view overlay hm-white-light z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(36).jpg" class="img-fluid">
+                        <div class="mask"></div>
+                    </div>
+                </div>
+                <!--Featured image-->
+
+                <!--Post excerpt-->
+                <div class="col-lg-5">
+                    <a href="#!"><h2 class="post-title font-bold">Post title</h2></a>
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="read-more">
+                        <a href="#!" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+                <!--/.Post excerpt-->
+            </div>
+            <!--/.Fifth row-->
+            <br>
+            <hr>
+
+            <!--Pagination-->
+            <nav class="row flex-center wow fadeIn" data-wow-delay="0.2s">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#!" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#!">1 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#!" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--/.Pagination-->
         </div>
         <!--/.Main layout-->
-
     </main>
 
-    <!--Footer-->
-    <footer class="page-footer center-on-small-only primary-color-dark">
 
-        <!--Footer Links-->
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+      <!--Footer links-->
         <div class="container-fluid">
             <div class="row">
-
                 <!--First column-->
-                <div class="col-md-3 offset-lg-1 hidden-lg-down">
-                    <h5 class="title"> 
-                        The Food Project
-                    </h5>
-                    <p> We are a group of college students from the UW </p>
-
+                <div class="col-lg-3 col-md-6 ml-auto">
+                    <h5 class="title mb-3"><strong>About material design</strong></h5>
+                    <p>Material Design (codenamed Quantum Paper) is a design language developed by Google.</p>
+                    <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS,
+                        and JS framework - Bootstrap.</p>
                 </div>
                 <!--/.First column-->
-
-                <hr class="hidden-md-up">
-
+                <hr class="w-100 clearfix d-sm-none">
                 <!--Second column-->
-                <div class="col-lg-2 col-md-4 offset-lg-1">
-                    <h5 class="title">First column</h5>
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title mb-3"><strong>First column</strong></h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
                     </ul>
                 </div>
                 <!--/.Second column-->
-
-                <hr class="hidden-md-up">
-
+                <hr class="w-100 clearfix d-sm-none">
                 <!--Third column-->
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Second column</h5>
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title mb-3"><strong>Second column</strong></h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
                     </ul>
                 </div>
                 <!--/.Third column-->
-
-                <hr class="hidden-md-up">
-
+                <hr class="w-100 clearfix d-sm-none">
                 <!--Fourth column-->
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Third column</h5>
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title mb-3"><strong>Third column</strong></h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
                     </ul>
                 </div>
                 <!--/.Fourth column-->
-
             </div>
         </div>
-        <!--/.Footer Links-->
+        <!--/.Footer links-->
+        <hr>
+        <!--Call to action-->
+        <div class="call-to-action">
+            <h4 class="mb-5">Material Design for Bootstrap</h4>
+            <ul>
+                <li>
+                    <h5>Get our UI KIT for free</h5>
+                </li>
+                <li>
+                    <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary waves-effect waves-light" rel="nofollow">Sign up!</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-info waves-effect waves-light" rel="nofollow">Learn more</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.Call to action-->
 
         <!--Copyright-->
         <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 The Food Project </a>
-
+            <div class="containter-fluid">
+                © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
             </div>
         </div>
         <!--/.Copyright-->
-
     </footer>
     <!--/.Footer-->
-
 
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -516,7 +401,10 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-
+    <script>
+    new WOW().init();
+    </script>
+    
 </body>
 
 </html>
